@@ -87,6 +87,9 @@ $this->load->view('admin/includes/navbar'); ?>
                                                         <?php if($booking['serviceStatus'] != '2' && !$booking['serviceStatus']) { ?>
                                                         <a href="<?php anchor_to(BOOKINGS_CONTROLLER . '/bookingAdd/' . esc($booking['id'], true). '/true') ?>" class="btn btn-link btn-primary dropdown-item">Add</a>
                                                         <?php } ?>
+                                                        <?php if($booking['serviceStatus'] != '2' && !$booking['serviceStatus']) { ?>
+                                                        <a href="<?php anchor_to(BOOKINGS_CONTROLLER . '/bookingInvoice/' . esc($booking['id'], true). '/true') ?>" class="btn btn-link btn-primary dropdown-item">Invoice</a>
+                                                        <?php } ?>
                                                         <button type="button" class="btn btn-link btn-danger dropdown-item deleteBookings" value="<?php echo esc($booking['id'], true) ?>">Delete</button>
                                                     </div>
                                                 </div>   
