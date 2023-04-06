@@ -14,7 +14,6 @@
 							<?php foreach($pages as $page) { if($page['status'] && ($page['position'] == 1 || $page['position'] == 3)) { ?>
 								<li class="bdtn"><a href="<?php anchor_to('page/' . $page['permalink']) ?>"><?php echo esc($page['title'], true) ?></a></li>
 							<?php } } ?>
-							<li class="bdtn"><a href="<?php echo base_url('#contactUs'); ?>">Contact Us</a></li>
 							<?php if($blogStatus['bstatus'] == 1){ ?>
 							<?php } ?>
 						</ul>
