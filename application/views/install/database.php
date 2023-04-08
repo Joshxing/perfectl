@@ -3,12 +3,11 @@ $this->load->view("install/includes/head");
 ?>
 	<div class="installer-container">
 		<div class="installer-logo-area">
-			<a class="logo-icon" href="<?php echo(VENDOR_URL); ?>" target="_blank">Desclix</a>
+			<a class="logo-icon" href="<?php echo(VENDOR_URL); ?>" target="_blank">Perfectly You</a>
 		</div>
 		<!-- /installer-logo-area -->
 		<div class="text-center">
 		<div class="welcome-logo-text">
-			Welcome To "<span><?php echo(PRODUCT_NAME); ?></span>" Installer
 		</div>
 		<!-- /welcome-logo-text -->
 		</div>
